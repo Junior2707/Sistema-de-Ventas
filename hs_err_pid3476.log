@@ -1,0 +1,44 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#
+#  
+ Windows 11 , 64 bit Build 22000 (10.0.22000.708)
+Time: Tue Jun 21 23:11:58 2022 Hora estándar, América Central elapsed time: 14598.570222 seconds (0d 4h 3m 18s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001ff86029210):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=27788, stack(0x000000b585500000,0x000000b585600000)]
+
+
+Current CompileTask:
+C2:14598570 2001       4       sun.util.logging.PlatformLogger::isLoggable (23 bytes)
+
+Stack: [0x000000b585500000,0x000000b585600000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x69887a]
+V  [jvm.dll+0x7f38bd]
+V  [jvm.dll+0x7f51ce]
+V  [jvm.dll+0x7f5883]
+V  [jvm.dll+0x25ca3f]
+V  [jvm.dll+0xb8c2f]
+V  [jvm.dll+0xb8fa5]
+V  [jvm.dll+0x62af84]
+V  [jvm.dll+0x62c65b]
+V  [jvm.dll+0x62aae4]
+V  [jvm.dll+0x22fa98]
+V  [jvm.dll+0x22eff1]
+V  [jvm.dll+0x1b9cfc]
+V  [jvm.dll+0x23e8ca]
+V  [jvm.dll+0x23cbb5]
+V  [jvm.dll+0x7a5fb1]
+V  [jvm.dll+0x7a03ea]

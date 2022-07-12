@@ -1,0 +1,28 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#
+#  
+ Windows 11 , 64 bit Build 22000 (10.0.22000.708)
+Time: Tue Jun 21 23:11:58 2022 Hora estándar, América Central elapsed time: 14055.941849 seconds (0d 3h 54m 15s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002c87f9dfc30):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=22228, stack(0x000000e61ef00000,0x000000e61f000000)]
+
+
+Current CompileTask:
+C2:14055941 2226       4       java.lang.StringConcatHelper::prepend (37 bytes)
+
+Stack: [0x000000e61ef00000,0x000000e61f000000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x69887a]
